@@ -1,6 +1,9 @@
 <% if user_signed_in? %>
   <h1>You're signed in!</h1>
-  
+  <div class="center hero-unit">
+    <%= link_to "Edit Profile", edit_user_registration_path, 
+                                  class: "btn btn-large btn-primary" %>
+  </div>
 <% else %>
   
   <div class="center hero-unit">
